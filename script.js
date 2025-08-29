@@ -83,7 +83,7 @@ function called(id, title, subtitle, number) {
     const newDiv = document.createElement('div');
 
     newDiv.innerHTML = `
-<div class="md:flex flex-row justify-between items-center m-3 pt-3">
+<div class="lg:flex flex-row justify-between items-center m-3 pt-3">
                 <div>
                     <h1 class="font-semibold text-xl">${callTitle}</h1>
                     <p class="text-xl">${calledNumber}</p>
@@ -137,6 +137,55 @@ document.getElementById('call-9').addEventListener('click', function () {
     called('call-9', 'title-9', 'subtitle-9', 'number-9')
 })
 
+
+
+// copy
+
+function copyNumber( number) {
+
+    navigator.clipboard.writeText(document.getElementById(number).innerText)
+
+    const totalCopied = parseInt(document.getElementById('total-copied').innerText)
+    document.getElementById('total-copied').innerText = (totalCopied + 1) + ' ';
+
+    alert('Number is copied: ' + document.getElementById(number).innerText)
+}
+
+document.getElementById('copy-1').addEventListener('click', function () {
+    copyNumber('number-1')
+})
+
+document.getElementById('copy-2').addEventListener('click', function () {
+    copyNumber('number-2')
+})
+
+document.getElementById('copy-3').addEventListener('click', function () {
+    copyNumber('number-3')
+})
+
+document.getElementById('copy-4').addEventListener('click', function () {
+    copyNumber('number-4')
+})
+
+document.getElementById('copy-5').addEventListener('click', function () {
+    copyNumber('number-5')
+})
+
+document.getElementById('copy-6').addEventListener('click', function () {
+    copyNumber('number-6')
+})
+
+document.getElementById('copy-7').addEventListener('click', function () {
+    copyNumber('number-7')
+})
+
+document.getElementById('copy-8').addEventListener('click', function () {
+    copyNumber('number-8')
+})
+
+document.getElementById('copy-9').addEventListener('click', function () {
+    copyNumber('number-9')
+})
 
 
 // clear history

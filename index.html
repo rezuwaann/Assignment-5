@@ -57,7 +57,7 @@
 
                 <div id="copied"
                     class="bg-[#00A63E] p-3 lg:w-[120px] rounded-[50px] flex justify-center gap-1 items-center text-white text-lg ">
-                    <p><span>0 </span>Copy</p>
+                    <p><span id="total-copied">0 </span>Copy</p>
 
                 </div>
             </div>
@@ -75,12 +75,12 @@
     </section>
 
 
-    <section class="flex flex-col  md:flex-row bg-[#F5FFF6]">
+    <section class="flex flex-col md:flex-row bg-[#F5FFF6]">
 
 
         <!-- all cards -->
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 p-10">
+        <div class="grid grid-cols-1  xl:grid-cols-2 2xl:grid-cols-3 gap-10 p-10">
 
 
             <!-- emergency -->
@@ -97,7 +97,7 @@
                 <p class="bg-[#f2f2f2] rounded-3xl text-center px-4 py-1 inline-block mb-3 ">All</p>
 
                 <div class="btn-div flex mt-3 gap-2">
-                    <button class="hover:bg-gray-200 hover:cursor-pointer border-1 border-gray-300 w-1/2 rounded-lg min-h-10"><i
+                    <button id="copy-1" class="hover:bg-gray-200 hover:cursor-pointer border-1 border-gray-300 w-1/2 rounded-lg min-h-10"><i
                             class="fa-regular fa-copy mr-1"></i>Copy</button>
                     <button id="call-1" class="bg-[#00A63E] hover:bg-[#008030] hover:cursor-pointer w-1/2 rounded-lg text-white min-h-10"><i
                             class="fa-solid fa-phone mr-1"></i>Call</button>
@@ -118,7 +118,7 @@
                 <p class="bg-[#f2f2f2] rounded-3xl text-center px-4 py-1 inline-block mb-3 ">Police</p>
 
                 <div class="btn-div flex mt-3 gap-2">
-                    <button class="hover:bg-gray-200 hover:cursor-pointer  border-1 border-gray-300 w-1/2 rounded-lg min-h-10"><i
+                    <button id="copy-2" class="hover:bg-gray-200 hover:cursor-pointer  border-1 border-gray-300 w-1/2 rounded-lg min-h-10"><i
                             class="fa-regular fa-copy mr-1"></i>Copy</button>
                     <button id="call-2" class="hover:bg-[#008030] hover:cursor-pointer bg-[#00A63E] w-1/2 rounded-lg text-white min-h-10"><i
                             class="fa-solid fa-phone mr-1"></i>Call</button>
@@ -139,7 +139,7 @@
                 <p class="bg-[#f2f2f2] rounded-3xl text-center px-4 py-1 inline-block mb-3 ">Fire</p>
 
                 <div class="btn-div flex mt-3 gap-2">
-                    <button class="hover:bg-gray-200 hover:cursor-pointer border-1 border-gray-300 w-1/2 rounded-lg min-h-10"><i
+                    <button id="copy-3" class="hover:bg-gray-200 hover:cursor-pointer border-1 border-gray-300 w-1/2 rounded-lg min-h-10"><i
                             class="fa-regular fa-copy mr-1"></i>Copy</button>
                     <button id="call-3" class="hover:bg-[#008030] hover:cursor-pointer bg-[#00A63E] w-1/2 rounded-lg text-white min-h-10"><i
                             class="fa-solid fa-phone mr-1"></i>Call</button>
@@ -160,7 +160,7 @@
                 <p class="bg-[#f2f2f2] rounded-3xl text-center px-4 py-1 inline-block mb-3 ">Health</p>
 
                 <div class="btn-div flex mt-3 gap-2">
-                    <button class="hover:bg-gray-200 hover:cursor-pointer border-1 border-gray-300 w-1/2 rounded-lg min-h-10"><i
+                    <button id="copy-4" class="hover:bg-gray-200 hover:cursor-pointer border-1 border-gray-300 w-1/2 rounded-lg min-h-10"><i
                             class="fa-regular fa-copy mr-1"></i>Copy</button>
                     <button id="call-4" class="hover:bg-[#008030] hover:cursor-pointer bg-[#00A63E] w-1/2 rounded-lg text-white min-h-10"><i
                             class="fa-solid fa-phone mr-1"></i>Call</button>
@@ -182,7 +182,7 @@
                 <p class="bg-[#f2f2f2] rounded-3xl text-center px-4 py-1 inline-block mb-3 ">Help</p>
 
                 <div class="btn-div flex mt-3 gap-2">
-                    <button class="hover:bg-gray-200 hover:cursor-pointer border-1 border-gray-300 w-1/2 rounded-lg min-h-10"><i
+                    <button id="copy-5" class="hover:bg-gray-200 hover:cursor-pointer border-1 border-gray-300 w-1/2 rounded-lg min-h-10"><i
                             class="fa-regular fa-copy mr-1"></i>Copy</button>
                     <button id="call-5" class="hover:bg-[#008030] hover:cursor-pointer bg-[#00A63E] w-1/2 rounded-lg text-white min-h-10"><i
                             class="fa-solid fa-phone mr-1"></i>Call</button>
@@ -204,7 +204,7 @@
                 <p class="bg-[#f2f2f2] rounded-3xl text-center px-4 py-1 inline-block mb-3 ">Govt.</p>
 
                 <div class="btn-div flex mt-3 gap-2">
-                    <button class="hover:bg-gray-200 hover:cursor-pointer border-1 border-gray-300 w-1/2 rounded-lg min-h-10"><i
+                    <button id="copy-6" class="hover:bg-gray-200 hover:cursor-pointer border-1 border-gray-300 w-1/2 rounded-lg min-h-10"><i
                             class="fa-regular fa-copy mr-1"></i>Copy</button>
                     <button id="call-6" class="hover:bg-[#008030] hover:cursor-pointer bg-[#00A63E] w-1/2 rounded-lg text-white min-h-10"><i
                             class="fa-solid fa-phone mr-1"></i>Call</button>
@@ -226,7 +226,7 @@
                 <p class="bg-[#f2f2f2] rounded-3xl text-center px-4 py-1 inline-block mb-3 ">Electricity</p>
 
                 <div class="btn-div flex mt-3 gap-2">
-                    <button class="hover:bg-gray-200 hover:cursor-pointer border-1 border-gray-300 w-1/2 rounded-lg min-h-10"><i
+                    <button id="copy-7" class="hover:bg-gray-200 hover:cursor-pointer border-1 border-gray-300 w-1/2 rounded-lg min-h-10"><i
                             class="fa-regular fa-copy mr-1"></i>Copy</button>
                     <button id="call-7" class="hover:bg-[#008030] hover:cursor-pointer bg-[#00A63E] w-1/2 rounded-lg text-white min-h-10"><i
                             class="fa-solid fa-phone mr-1"></i>Call</button>
@@ -248,7 +248,7 @@
                 <p class="bg-[#f2f2f2] rounded-3xl text-center px-4 py-1 inline-block mb-3 ">NGO</p>
 
                 <div class="btn-div flex mt-3 gap-2">
-                    <button class="hover:bg-gray-200 hover:cursor-pointer border-1 border-gray-300 w-1/2 rounded-lg min-h-10"><i
+                    <button id="copy-8" class="hover:bg-gray-200 hover:cursor-pointer border-1 border-gray-300 w-1/2 rounded-lg min-h-10"><i
                             class="fa-regular fa-copy mr-1"></i>Copy</button>
                     <button id="call-8" class="hover:bg-[#008030] hover:cursor-pointer bg-[#00A63E] w-1/2 rounded-lg text-white min-h-10"><i
                             class="fa-solid fa-phone mr-1"></i>Call</button>
@@ -270,7 +270,7 @@
                 <p class="bg-[#f2f2f2] rounded-3xl text-center px-4 py-1 inline-block mb-3 ">Travel</p>
 
                 <div class="btn-div flex mt-3 gap-2">
-                    <button class="hover:bg-gray-200 hover:cursor-pointer border-1 border-gray-300 w-1/2 rounded-lg min-h-10"><i
+                    <button id="copy-9" class="hover:bg-gray-200 hover:cursor-pointer border-1 border-gray-300 w-1/2 rounded-lg min-h-10"><i
                             class="fa-regular fa-copy mr-1"></i>Copy</button>
                     <button id="call-9" class="hover:bg-[#008030] hover:cursor-pointer bg-[#00A63E] w-1/2 rounded-lg text-white min-h-10"><i
                             class="fa-solid fa-phone mr-1"></i>Call</button>
@@ -283,7 +283,7 @@
 
         <!-- history section -->
 
-        <div class="border md:min-w-[450px] m-7 bg-white rounded-xl shadow-[0px_2px_3px_0px_#00000026] ">
+        <div class=" xl:min-w-[450px] m-7 bg-white rounded-xl shadow-[0px_2px_3px_0px_#00000026] ">
 
             <div class="flex justify-between items-center p-6">
                 <h1 class="font-semibold text-xl"><i class="fa-regular fa-clock mr-1"></i>Call History</h1>
