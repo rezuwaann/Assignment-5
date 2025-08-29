@@ -83,7 +83,7 @@ function called(id, title, subtitle, number) {
     const newDiv = document.createElement('div');
 
     newDiv.innerHTML = `
-<div class="lg:flex flex-row justify-between items-center m-3 pt-3">
+<div class="lg:flex flex-row justify-between items-center m-3 p-3 pt-3 rounded-[8px] bg-[#F5FFF6]">
                 <div>
                     <h1 class="font-semibold text-xl">${callTitle}</h1>
                     <p class="text-xl">${calledNumber}</p>
