@@ -20,7 +20,9 @@ After finishing that i will append the new element into parent element which i s
 
 #3. What is **Event Bubbling** and how does it work?
 
-   Ans: When an event is clicked browser automatically finds the its  parent and run its event if there is anything, when child was clicked and this goes on until document if it is not stopped.
+   Ans: Event bubbling means when an event is triggered in an element,child goes to its parent element and it is continued if stopPropagation() is not used. 
+
+   How it works: If an element is clicked, it excecutes the event and bubbles up to its parent element and excecuted event if there is any event then it continues to bubbling up until it reaches document object 
 
 
 
