@@ -61,23 +61,28 @@ document.getElementById('heart-9').addEventListener('click', function () {
 function called(id, title, subtitle, number) {
 
 
-    document.getElementById(id).addEventListener('click', function () {
+    const totalCoins = parseInt(document.getElementById('total-coins').innerText);
 
-console.log('cliked')
+    if (totalCoins < 20) {
+        alert('❌ You dont have enough coin, you need atleast 20 coins to call');
+        return;
+    } else {
+        document.getElementById('total-coins').innerText = totalCoins - 20;
+    }
 
-        const callTitle = document.getElementById(title).innerText;
-        const callSubtitle = document.getElementById(subtitle).innerText;
-        const calledNumber = document.getElementById(number).innerText;
+    const callTitle = document.getElementById(title).innerText;
+    const callSubtitle = document.getElementById(subtitle).innerText;
+    const calledNumber = document.getElementById(number).innerText;
 
-        const now = new Date();
-        const timeString = now.toLocaleTimeString();
+    const now = new Date();
+    const timeString = now.toLocaleTimeString();
 
-        alert('📞 ' + 'Calling ' + callSubtitle + ' ' + calledNumber + '...')
+    alert('📞 ' + 'Calling ' + callTitle + ' ' + calledNumber + '...')
 
-        const div = document.getElementById('history-div');
-        const newDiv = document.createElement('div');
+    const div = document.getElementById('history-div');
+    const newDiv = document.createElement('div');
 
-        newDiv.innerHTML = `
+    newDiv.innerHTML = `
 <div class="md:flex flex-row justify-between items-center m-3 pt-3">
                 <div>
                     <h1 class="font-semibold text-xl">${callTitle}</h1>
@@ -90,11 +95,10 @@ console.log('cliked')
             </div>
 `
 
-        div.appendChild(newDiv)
+    div.appendChild(newDiv)
 
 
 
-    })
 }
 
 document.getElementById('call-1').addEventListener('click', function () {
